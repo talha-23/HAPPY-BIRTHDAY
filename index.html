@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday My Love</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Poppins:wght@300;400;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+  <audio id="birthdayMusic" autoplay loop>
+    <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+  </audio>
+
+  <div class="music-control" onclick="toggleMusic()">
+    <span id="musicIcon">🔊</span>
+  </div>
+
+  <div class="container">
+    <div class="particles" id="particles-js"></div>
+
+    <div class="main-content">
+      <div class="birthday-card">
+        <div class="card-inner">
+          <div class="card-front">
+            <h1 class="animated-text">Happy Birthday Iraj!</h1>
+            <div class="cake">
+              <div class="plate"></div>
+              <div class="layer layer-bottom"></div>
+              <div class="layer layer-middle"></div>
+              <div class="layer layer-top"></div>
+              <div class="icing"></div>
+              <div class="candle">
+                <div class="flame"></div>
+              </div>
+            </div>
+            <p class="subtitle">Click the card to open your gift</p>
+          </div>
+          <div class="card-back">
+            <h2>To An Amazing Lady</h2>
+            <div class="message-container">
+              <p class="message" id="message1">Wishing you a day filled with happiness and a year filled with joy. Happy
+                birthday!</p>
+              <p class="message" id="message2" style="display:none">You shine brighter than the stars in the night sky.
+                May your birthday be as special as you are!</p>
+              <p class="message" id="message3" style="display:none">Another year of you blessing this world with your
+                presence. The world is better with you in it!</p>
+              <p class="message" id="message4" style="display:none">Your smile lights up my world. May your birthday be
+                as radiant as you are!</p>
+              <p class="message" id="message5" style="display:none">Celebrating the amazing person you are today and
+                every day. Happy birthday!</p>
+              <p class="message" id="message6" style="display:none">To the woman who makes every day special - may your
+                birthday be extraordinary!</p>
+            </div>
+            <button class="wish-btn" onclick="changeMessage()">Next Wish</button>
+            <div class="hearts"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="floating-elements">
+      <div class="floating-balloon balloon1">🎈</div>
+      <div class="floating-balloon balloon2">🎈</div>
+      <div class="floating-balloon balloon3">🎈</div>
+      <div class="floating-confetti">✨</div>
+    </div>
+
+    <div class="star-wish">
+      <h3>Make a Birthday Wish</h3>
+      <div class="stars-container" id="stars-container"></div>
+      <button class="wish-btn" onclick="shootStar()">Shoot a Star</button>
+    </div>
+
+    <div class="fortune-wheel">
+      <h3>Birthday Fortune Wheel</h3>
+      <div class="wheel-container">
+        <div class="wheel" id="wheel">
+          <div class="wheel-item">Joy</div>
+          <div class="wheel-item">Love</div>
+          <div class="wheel-item">Success</div>
+          <div class="wheel-item">Health</div>
+          <div class="wheel-item">Adventure</div>
+          <div class="wheel-item">Laughter</div>
+        </div>
+        <div class="wheel-center"></div>
+        <div class="wheel-pointer"></div>
+      </div>
+      <button class="wish-btn" onclick="spinWheel()">Spin the Wheel</button>
+    </div>
+  </div>
+
+  <footer class="birthday-footer">
+    Made with ❤️ by Talha for a special friend
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script src="index.js"></script>
+</body>
+
+</html>
